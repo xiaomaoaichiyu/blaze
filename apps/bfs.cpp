@@ -73,6 +73,7 @@ struct BFS_Vertex_Init {
 
     inline bool operator() (const VID& node) {
         parents[node] = UINT_MAX;
+        return 1;
     }
 };
 
